@@ -1,0 +1,143 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box;font-family: calibri;
+}
+.open_form{
+	background-color: white;
+	color: black;
+	border: 1px solid #f1f1f1;
+	border-radius:10px ; 
+	padding: 10px;
+	cursor: pointer;
+	font-size: 15px;
+	width: 80px;
+	height: 40px;
+	text-align: center;
+}
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	overflow: auto;/*to enable scrolling*/
+	overflow-x: hidden;
+	padding-top: 30px;
+	left: 0;
+	top: 0;
+	background-color: rgb(0,0,0); /* Fallback color */
+  	background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+  	width: 100%;
+  	height: 100%;
+}
+.modal-content{
+	background-color: #fefefe;
+	margin:5px auto;
+	width: 80%;
+	border: 1px solid #888;
+}
+.close{
+	position: absolute;
+	right: 55px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.close:hover{
+	color: red;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+form{
+	border: 3px solid #f1f1f1;
+}
+.p_image{
+	text-align: center;
+	margin: 20px;
+	padding-bottom: 30px;
+}
+.p_image img{
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}
+label{
+	text-transform: uppercase;
+	padding:5px;
+}
+input[type=text],input[type=password]{
+	width: 100%;
+	padding: 10px;
+	padding-left: 0;
+	margin: 10px;
+	margin-left:0px; 
+	display: inline-block;
+	border: 1px solid #ccc;
+	text-transform: uppercase;
+}
+.login{
+	background-color: #7E56F1;
+	color: white;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+	border: none;
+}
+.login:hover{
+	opacity: 0.8;
+}
+.cancelbtn{
+	background-color: red;
+	opacity: 0.8;
+	color: white;
+	border: none;
+	width: 100%;
+	padding: 10px;
+	cursor: pointer;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+.cancelbtn:hover{
+	opacity: 0.7;
+}
+.fd_conatiner{
+	padding:100px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+  text-transform: uppercase;
+}
+span.psw a{
+	text-decoration: none;
+}
+input[type=checkbox]{
+	margin: 10px;
+	margin-left: 5px;
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+.carousel-caption p{
+	z-index: auto;
+}
